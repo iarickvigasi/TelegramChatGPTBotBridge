@@ -56,7 +56,7 @@ def main():
     application.run_webhook(
         listen="0.0.0.0",
         port=PORT,
-        secret_token=TELEGRAM_API_TOKEN,
+        secret_token='ASecretTokenIHaveChangedByNow',
         webhook_url="https://chat-gpt-telegeram-bridge.herokuapp.com/"
     )
 
