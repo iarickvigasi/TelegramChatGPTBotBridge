@@ -53,7 +53,12 @@ def main():
     application.add_error_handler(error)
 
     # Start the Bot
-    application.run_polling()
+    application.run_webhook(
+        listen="0.0.0.0",
+        port=PORT,
+        secret_token=TELEGRAM_API_TOKEN,
+        webhook_url="https://chat-gpt-telegeram-bridge.herokuapp.com/"
+    )
 
     # webhook broken setup
     # application.updater.start_webhook(listen="0.0.0.0",
