@@ -9,7 +9,7 @@ logname = "bot.log"
 
 
 async def predict_default(prompt, tempature=0.9, max_tokens=256, top_p=1, frequency_penalty=0, presence_penalty=0):
-    prediction = openai.Completion.create(
+    prediction = await openai.Completion.create(
         engine=model_id,
         prompt=prompt,
         temperature=tempature,

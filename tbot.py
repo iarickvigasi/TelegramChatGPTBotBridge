@@ -37,7 +37,7 @@ async def help(update, context):
 async def echo(update, context):
     """Echo the user message."""
     prompt = update.message.text
-    prediction = predict_default(prompt)
+    prediction = await predict_default(prompt)
     await context.bot.send_message(chat_id=update.effective_chat.id, text=prediction["choices"][0]["text"])
 
 async def error(update, context):
