@@ -9,9 +9,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 from telegram import Update
 from telegram.ext import filters, MessageHandler, ApplicationBuilder, CommandHandler, ContextTypes
 
-logname = "bot.log"
 model_id = "text-davinci-003"
-
+logname = "bot.log"
 logging.basicConfig(filename=logname,
                     filemode='a',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
