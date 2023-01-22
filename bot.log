@@ -1,0 +1,264 @@
+20:45:13,633 asyncio DEBUG Using selector: KqueueSelector
+20:45:13,667 telegram._bot DEBUG Entering: get_me
+20:45:13,922 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getMe "HTTP/1.1 200 OK"
+20:45:13,923 telegram._bot DEBUG User(can_join_groups=True, can_read_all_group_messages=False, first_name='AricksChatGPTMedium_Experimenting', id=5835657366, is_bot=True, supports_inline_queries=False, username='av_chat_gpt_exp_bot')
+20:45:13,923 telegram._bot DEBUG Exiting: get_me
+20:45:13,924 telegram._bot DEBUG This Bot is already initialized.
+20:45:13,924 telegram.ext._updater DEBUG Updater started (polling)
+20:45:13,924 telegram.ext._updater DEBUG Start network loop retry bootstrap del webhook
+20:45:13,924 telegram.ext._updater DEBUG Deleting webhook
+20:45:13,924 telegram._bot DEBUG Entering: delete_webhook
+20:45:13,960 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/deleteWebhook "HTTP/1.1 200 OK"
+20:45:13,961 telegram._bot DEBUG True
+20:45:13,961 telegram._bot DEBUG Exiting: delete_webhook
+20:45:13,961 telegram.ext._updater DEBUG Bootstrap done
+20:45:13,961 telegram.ext._updater DEBUG Waiting for polling to start
+20:45:13,961 telegram.ext._updater DEBUG Polling updates from Telegram started
+20:45:13,961 telegram.ext._updater DEBUG Start network loop retry getting Updates
+20:45:13,962 telegram._bot DEBUG Entering: get_updates
+20:45:13,963 apscheduler.scheduler INFO Scheduler started
+20:45:13,964 telegram.ext._application DEBUG JobQueue started
+20:45:13,964 telegram.ext._application INFO Application started
+20:45:13,964 apscheduler.scheduler DEBUG Looking for jobs to run
+20:45:13,964 apscheduler.scheduler DEBUG No jobs; waiting until a job is added
+20:45:14,189 telegram.ext._updater DEBUG Stopping Updater
+20:45:14,189 telegram.ext._updater DEBUG Waiting background polling task to finish up.
+20:45:14,190 telegram.ext._updater DEBUG Network loop retry getting Updates was cancelled
+20:45:14,190 telegram.ext._updater DEBUG Updater.stop() is complete
+20:45:14,191 telegram.ext._application INFO Application is stopping. This might take a moment.
+20:45:14,191 telegram.ext._application DEBUG Waiting for update_queue to join
+20:45:14,191 telegram.ext._application DEBUG Dropping pending updates
+20:45:14,191 telegram.ext._application DEBUG Application stopped fetching of updates.
+20:45:14,191 telegram.ext._application DEBUG Waiting for running jobs to finish
+20:45:14,191 apscheduler.scheduler INFO Scheduler has been shut down
+20:45:14,201 telegram.ext._application DEBUG JobQueue stopped
+20:45:14,201 telegram.ext._application DEBUG Waiting for `create_task` calls to be processed
+20:45:14,201 telegram.ext._application INFO Application.stop() complete
+20:45:14,202 telegram._bot DEBUG This Bot is already shut down. Returning.
+20:45:14,202 telegram.ext._updater DEBUG Shut down of Updater complete
+20:45:15,835 asyncio DEBUG Using selector: KqueueSelector
+20:45:15,860 telegram._bot DEBUG Entering: get_me
+20:45:16,84 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getMe "HTTP/1.1 200 OK"
+20:45:16,85 telegram._bot DEBUG User(can_join_groups=True, can_read_all_group_messages=False, first_name='AricksChatGPTMedium_Experimenting', id=5835657366, is_bot=True, supports_inline_queries=False, username='av_chat_gpt_exp_bot')
+20:45:16,86 telegram._bot DEBUG Exiting: get_me
+20:45:16,86 telegram._bot DEBUG This Bot is already initialized.
+20:45:16,86 telegram.ext._updater DEBUG Updater started (polling)
+20:45:16,86 telegram.ext._updater DEBUG Start network loop retry bootstrap del webhook
+20:45:16,86 telegram.ext._updater DEBUG Deleting webhook
+20:45:16,86 telegram._bot DEBUG Entering: delete_webhook
+20:45:16,120 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/deleteWebhook "HTTP/1.1 200 OK"
+20:45:16,121 telegram._bot DEBUG True
+20:45:16,122 telegram._bot DEBUG Exiting: delete_webhook
+20:45:16,122 telegram.ext._updater DEBUG Bootstrap done
+20:45:16,122 telegram.ext._updater DEBUG Waiting for polling to start
+20:45:16,122 telegram.ext._updater DEBUG Polling updates from Telegram started
+20:45:16,122 telegram.ext._updater DEBUG Start network loop retry getting Updates
+20:45:16,122 telegram._bot DEBUG Entering: get_updates
+20:45:16,124 apscheduler.scheduler INFO Scheduler started
+20:45:16,124 telegram.ext._application DEBUG JobQueue started
+20:45:16,124 telegram.ext._application INFO Application started
+20:45:16,124 apscheduler.scheduler DEBUG Looking for jobs to run
+20:45:16,125 apscheduler.scheduler DEBUG No jobs; waiting until a job is added
+20:45:26,289 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:45:26,290 telegram._bot DEBUG No new updates found.
+20:45:26,290 telegram._bot DEBUG ()
+20:45:26,290 telegram._bot DEBUG Exiting: get_updates
+20:45:26,290 telegram._bot DEBUG Entering: get_updates
+20:45:32,753 telegram.ext._updater DEBUG Stopping Updater
+20:45:32,753 telegram.ext._updater DEBUG Waiting background polling task to finish up.
+20:45:32,754 telegram.ext._updater DEBUG Network loop retry getting Updates was cancelled
+20:45:32,754 telegram.ext._updater DEBUG Updater.stop() is complete
+20:45:32,754 telegram.ext._application INFO Application is stopping. This might take a moment.
+20:45:32,755 telegram.ext._application DEBUG Waiting for update_queue to join
+20:45:32,755 telegram.ext._application DEBUG Dropping pending updates
+20:45:32,755 telegram.ext._application DEBUG Application stopped fetching of updates.
+20:45:32,755 telegram.ext._application DEBUG Waiting for running jobs to finish
+20:45:32,755 apscheduler.scheduler INFO Scheduler has been shut down
+20:45:32,765 telegram.ext._application DEBUG JobQueue stopped
+20:45:32,765 telegram.ext._application DEBUG Waiting for `create_task` calls to be processed
+20:45:32,765 telegram.ext._application INFO Application.stop() complete
+20:45:32,766 telegram._bot DEBUG This Bot is already shut down. Returning.
+20:45:32,767 telegram.ext._updater DEBUG Shut down of Updater complete
+20:45:34,274 asyncio DEBUG Using selector: KqueueSelector
+20:45:34,300 telegram._bot DEBUG Entering: get_me
+20:45:34,534 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getMe "HTTP/1.1 200 OK"
+20:45:34,535 telegram._bot DEBUG User(can_join_groups=True, can_read_all_group_messages=False, first_name='AricksChatGPTMedium_Experimenting', id=5835657366, is_bot=True, supports_inline_queries=False, username='av_chat_gpt_exp_bot')
+20:45:34,536 telegram._bot DEBUG Exiting: get_me
+20:45:34,536 telegram._bot DEBUG This Bot is already initialized.
+20:45:34,537 telegram.ext._updater DEBUG Updater started (polling)
+20:45:34,537 telegram.ext._updater DEBUG Start network loop retry bootstrap del webhook
+20:45:34,537 telegram.ext._updater DEBUG Deleting webhook
+20:45:34,537 telegram._bot DEBUG Entering: delete_webhook
+20:45:34,574 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/deleteWebhook "HTTP/1.1 200 OK"
+20:45:34,575 telegram._bot DEBUG True
+20:45:34,575 telegram._bot DEBUG Exiting: delete_webhook
+20:45:34,575 telegram.ext._updater DEBUG Bootstrap done
+20:45:34,575 telegram.ext._updater DEBUG Waiting for polling to start
+20:45:34,575 telegram.ext._updater DEBUG Polling updates from Telegram started
+20:45:34,575 telegram.ext._updater DEBUG Start network loop retry getting Updates
+20:45:34,575 telegram._bot DEBUG Entering: get_updates
+20:45:34,577 apscheduler.scheduler INFO Scheduler started
+20:45:34,578 telegram.ext._application DEBUG JobQueue started
+20:45:34,578 telegram.ext._application INFO Application started
+20:45:34,578 apscheduler.scheduler DEBUG Looking for jobs to run
+20:45:34,578 apscheduler.scheduler DEBUG No jobs; waiting until a job is added
+20:45:44,840 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:45:44,841 telegram._bot DEBUG No new updates found.
+20:45:44,841 telegram._bot DEBUG ()
+20:45:44,841 telegram._bot DEBUG Exiting: get_updates
+20:45:44,841 telegram._bot DEBUG Entering: get_updates
+20:45:54,958 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:45:54,959 telegram._bot DEBUG No new updates found.
+20:45:54,959 telegram._bot DEBUG ()
+20:45:54,960 telegram._bot DEBUG Exiting: get_updates
+20:45:54,960 telegram._bot DEBUG Entering: get_updates
+20:46:05,96 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:46:05,97 telegram._bot DEBUG No new updates found.
+20:46:05,97 telegram._bot DEBUG ()
+20:46:05,97 telegram._bot DEBUG Exiting: get_updates
+20:46:05,97 telegram._bot DEBUG Entering: get_updates
+20:46:15,134 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:46:15,134 telegram._bot DEBUG No new updates found.
+20:46:15,135 telegram._bot DEBUG ()
+20:46:15,135 telegram._bot DEBUG Exiting: get_updates
+20:46:15,135 telegram._bot DEBUG Entering: get_updates
+20:46:25,167 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:46:25,168 telegram._bot DEBUG No new updates found.
+20:46:25,168 telegram._bot DEBUG ()
+20:46:25,169 telegram._bot DEBUG Exiting: get_updates
+20:46:25,169 telegram._bot DEBUG Entering: get_updates
+20:46:26,447 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:46:26,448 telegram._bot DEBUG Getting updates: [441136939]
+20:46:26,449 telegram._bot DEBUG (Update(message=Message(channel_chat_created=False, chat=Chat(first_name='Arick', id=130414078, last_name='Vigas', type=<ChatType.PRIVATE>, username='ArickVigas'), date=datetime.datetime(2023, 1, 22, 18, 46, 26, tzinfo=<UTC>), delete_chat_photo=False, from_user=User(first_name='Arick', id=130414078, is_bot=False, is_premium=True, language_code='en', last_name='Vigas', username='ArickVigas'), group_chat_created=False, message_id=367, supergroup_chat_created=False, text='asd'), update_id=441136939),)
+20:46:26,452 telegram._bot DEBUG Exiting: get_updates
+20:46:26,452 telegram._bot DEBUG Entering: get_updates
+20:46:26,454 telegram.ext._application DEBUG Processing update Update(message=Message(channel_chat_created=False, chat=Chat(first_name='Arick', id=130414078, last_name='Vigas', type=<ChatType.PRIVATE>, username='ArickVigas'), date=datetime.datetime(2023, 1, 22, 18, 46, 26, tzinfo=<UTC>), delete_chat_photo=False, from_user=User(first_name='Arick', id=130414078, is_bot=False, is_premium=True, language_code='en', last_name='Vigas', username='ArickVigas'), group_chat_created=False, message_id=367, supergroup_chat_created=False, text='asd'), update_id=441136939)
+20:46:26,509 openai INFO message='Request to OpenAI API' method=post path=https://api.openai.com/v1/engines/text-davinci-003/completions
+20:46:26,510 openai DEBUG api_version=None data='{"prompt": "asd", "temperature": 0.9, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0}' message='Post details'
+20:46:26,511 urllib3.util.retry DEBUG Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20:46:26,553 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.openai.com:443
+20:46:28,191 urllib3.connectionpool DEBUG https://api.openai.com:443 "POST /v1/engines/text-davinci-003/completions HTTP/1.1" 200 327
+20:46:28,192 openai INFO message='OpenAI API response' path=https://api.openai.com/v1/engines/text-davinci-003/completions processing_ms=962 request_id=454bbbe9ab5f5d0a9c4db3d6f566d8ba response_code=200
+20:46:28,197 telegram._bot DEBUG Entering: send_message
+20:46:28,480 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/sendMessage "HTTP/1.1 200 OK"
+20:46:28,493 telegram._bot DEBUG Message(channel_chat_created=False, chat=Chat(first_name='Arick', id=130414078, last_name='Vigas', type=<ChatType.PRIVATE>, username='ArickVigas'), date=datetime.datetime(2023, 1, 22, 18, 46, 28, tzinfo=<UTC>), delete_chat_photo=False, from_user=User(first_name='AricksChatGPTMedium_Experimenting', id=5835657366, is_bot=True, username='av_chat_gpt_exp_bot'), group_chat_created=False, message_id=368, supergroup_chat_created=False, text='{"id": "cmpl-6bZeFUnuHRQMPrju5rCunwqRl8OMk", "object": "text_completion", "created": 1674413187, "model": "text-davinci-003", "choices": [{"text": "ct\\n\\nThe letters do not spell out a word in the English language.", "index": 0, "logprobs": null, "finish_reason": "stop"}], "usage": {"prompt_tokens": 2, "completion_tokens": 16, "total_tokens": 18}}')
+20:46:28,494 telegram._bot DEBUG Exiting: send_message
+20:46:38,257 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:46:38,258 telegram._bot DEBUG No new updates found.
+20:46:38,258 telegram._bot DEBUG ()
+20:46:38,258 telegram._bot DEBUG Exiting: get_updates
+20:46:38,258 telegram._bot DEBUG Entering: get_updates
+20:46:48,291 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:46:48,292 telegram._bot DEBUG No new updates found.
+20:46:48,292 telegram._bot DEBUG ()
+20:46:48,293 telegram._bot DEBUG Exiting: get_updates
+20:46:48,293 telegram._bot DEBUG Entering: get_updates
+20:46:58,337 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:46:58,338 telegram._bot DEBUG No new updates found.
+20:46:58,338 telegram._bot DEBUG ()
+20:46:58,339 telegram._bot DEBUG Exiting: get_updates
+20:46:58,339 telegram._bot DEBUG Entering: get_updates
+20:47:08,536 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:47:08,537 telegram._bot DEBUG No new updates found.
+20:47:08,537 telegram._bot DEBUG ()
+20:47:08,537 telegram._bot DEBUG Exiting: get_updates
+20:47:08,537 telegram._bot DEBUG Entering: get_updates
+20:47:18,108 telegram.ext._updater DEBUG Stopping Updater
+20:47:18,108 telegram.ext._updater DEBUG Waiting background polling task to finish up.
+20:47:18,109 telegram.ext._updater DEBUG Network loop retry getting Updates was cancelled
+20:47:18,109 telegram.ext._updater DEBUG Updater.stop() is complete
+20:47:18,109 telegram.ext._application INFO Application is stopping. This might take a moment.
+20:47:18,109 telegram.ext._application DEBUG Waiting for update_queue to join
+20:47:18,110 telegram.ext._application DEBUG Dropping pending updates
+20:47:18,110 telegram.ext._application DEBUG Application stopped fetching of updates.
+20:47:18,110 telegram.ext._application DEBUG Waiting for running jobs to finish
+20:47:18,110 apscheduler.scheduler INFO Scheduler has been shut down
+20:47:18,120 telegram.ext._application DEBUG JobQueue stopped
+20:47:18,120 telegram.ext._application DEBUG Waiting for `create_task` calls to be processed
+20:47:18,120 telegram.ext._application INFO Application.stop() complete
+20:47:18,121 telegram._bot DEBUG This Bot is already shut down. Returning.
+20:47:18,122 telegram.ext._updater DEBUG Shut down of Updater complete
+20:47:19,607 asyncio DEBUG Using selector: KqueueSelector
+20:47:19,634 telegram._bot DEBUG Entering: get_me
+20:47:19,825 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getMe "HTTP/1.1 200 OK"
+20:47:19,826 telegram._bot DEBUG User(can_join_groups=True, can_read_all_group_messages=False, first_name='AricksChatGPTMedium_Experimenting', id=5835657366, is_bot=True, supports_inline_queries=False, username='av_chat_gpt_exp_bot')
+20:47:19,827 telegram._bot DEBUG Exiting: get_me
+20:47:19,827 telegram._bot DEBUG This Bot is already initialized.
+20:47:19,827 telegram.ext._updater DEBUG Updater started (polling)
+20:47:19,827 telegram.ext._updater DEBUG Start network loop retry bootstrap del webhook
+20:47:19,827 telegram.ext._updater DEBUG Deleting webhook
+20:47:19,827 telegram._bot DEBUG Entering: delete_webhook
+20:47:19,865 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/deleteWebhook "HTTP/1.1 200 OK"
+20:47:19,866 telegram._bot DEBUG True
+20:47:19,866 telegram._bot DEBUG Exiting: delete_webhook
+20:47:19,866 telegram.ext._updater DEBUG Bootstrap done
+20:47:19,866 telegram.ext._updater DEBUG Waiting for polling to start
+20:47:19,866 telegram.ext._updater DEBUG Polling updates from Telegram started
+20:47:19,866 telegram.ext._updater DEBUG Start network loop retry getting Updates
+20:47:19,866 telegram._bot DEBUG Entering: get_updates
+20:47:19,868 apscheduler.scheduler INFO Scheduler started
+20:47:19,868 telegram.ext._application DEBUG JobQueue started
+20:47:19,868 telegram.ext._application INFO Application started
+20:47:19,868 apscheduler.scheduler DEBUG Looking for jobs to run
+20:47:19,869 apscheduler.scheduler DEBUG No jobs; waiting until a job is added
+20:47:30,13 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:47:30,14 telegram._bot DEBUG No new updates found.
+20:47:30,14 telegram._bot DEBUG ()
+20:47:30,14 telegram._bot DEBUG Exiting: get_updates
+20:47:30,14 telegram._bot DEBUG Entering: get_updates
+20:47:40,59 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:47:40,60 telegram._bot DEBUG No new updates found.
+20:47:40,60 telegram._bot DEBUG ()
+20:47:40,60 telegram._bot DEBUG Exiting: get_updates
+20:47:40,60 telegram._bot DEBUG Entering: get_updates
+20:47:50,106 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:47:50,108 telegram._bot DEBUG No new updates found.
+20:47:50,108 telegram._bot DEBUG ()
+20:47:50,108 telegram._bot DEBUG Exiting: get_updates
+20:47:50,108 telegram._bot DEBUG Entering: get_updates
+20:48:00,141 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:48:00,142 telegram._bot DEBUG No new updates found.
+20:48:00,142 telegram._bot DEBUG ()
+20:48:00,142 telegram._bot DEBUG Exiting: get_updates
+20:48:00,143 telegram._bot DEBUG Entering: get_updates
+20:48:10,242 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:48:10,243 telegram._bot DEBUG No new updates found.
+20:48:10,243 telegram._bot DEBUG ()
+20:48:10,243 telegram._bot DEBUG Exiting: get_updates
+20:48:10,243 telegram._bot DEBUG Entering: get_updates
+20:48:20,12 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:48:20,13 telegram._bot DEBUG Getting updates: [441136940]
+20:48:20,13 telegram._bot DEBUG (Update(message=Message(channel_chat_created=False, chat=Chat(first_name='Arick', id=130414078, last_name='Vigas', type=<ChatType.PRIVATE>, username='ArickVigas'), date=datetime.datetime(2023, 1, 22, 18, 48, 20, tzinfo=<UTC>), delete_chat_photo=False, from_user=User(first_name='Arick', id=130414078, is_bot=False, is_premium=True, language_code='en', last_name='Vigas', username='ArickVigas'), group_chat_created=False, message_id=369, supergroup_chat_created=False, text='asd'), update_id=441136940),)
+20:48:20,15 telegram._bot DEBUG Exiting: get_updates
+20:48:20,15 telegram._bot DEBUG Entering: get_updates
+20:48:20,16 telegram.ext._application DEBUG Processing update Update(message=Message(channel_chat_created=False, chat=Chat(first_name='Arick', id=130414078, last_name='Vigas', type=<ChatType.PRIVATE>, username='ArickVigas'), date=datetime.datetime(2023, 1, 22, 18, 48, 20, tzinfo=<UTC>), delete_chat_photo=False, from_user=User(first_name='Arick', id=130414078, is_bot=False, is_premium=True, language_code='en', last_name='Vigas', username='ArickVigas'), group_chat_created=False, message_id=369, supergroup_chat_created=False, text='asd'), update_id=441136940)
+20:48:20,41 openai INFO message='Request to OpenAI API' method=post path=https://api.openai.com/v1/engines/text-davinci-003/completions
+20:48:20,42 openai DEBUG api_version=None data='{"prompt": "asd", "temperature": 0.9, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0}' message='Post details'
+20:48:20,43 urllib3.util.retry DEBUG Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20:48:20,94 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.openai.com:443
+20:48:23,44 urllib3.connectionpool DEBUG https://api.openai.com:443 "POST /v1/engines/text-davinci-003/completions HTTP/1.1" 200 None
+20:48:23,58 openai INFO message='OpenAI API response' path=https://api.openai.com/v1/engines/text-davinci-003/completions processing_ms=2217 request_id=b5b9e50cc2a19c05693ab0b7a74a6af2 response_code=200
+20:48:23,61 telegram._bot DEBUG Entering: send_message
+20:48:23,286 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/sendMessage "HTTP/1.1 200 OK"
+20:48:23,288 telegram._bot DEBUG Message(channel_chat_created=False, chat=Chat(first_name='Arick', id=130414078, last_name='Vigas', type=<ChatType.PRIVATE>, username='ArickVigas'), date=datetime.datetime(2023, 1, 22, 18, 48, 23, tzinfo=<UTC>), delete_chat_photo=False, from_user=User(first_name='AricksChatGPTMedium_Experimenting', id=5835657366, is_bot=True, username='av_chat_gpt_exp_bot'), group_chat_created=False, message_id=370, supergroup_chat_created=False, text='asdsadsa\n+\n+ §§ --- filename\n §§ 1033\n+\n+asdsadsad')
+20:48:23,288 telegram._bot DEBUG Exiting: send_message
+20:48:33,165 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:48:33,166 telegram._bot DEBUG No new updates found.
+20:48:33,166 telegram._bot DEBUG ()
+20:48:33,166 telegram._bot DEBUG Exiting: get_updates
+20:48:33,167 telegram._bot DEBUG Entering: get_updates
+20:48:43,213 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:48:43,214 telegram._bot DEBUG No new updates found.
+20:48:43,214 telegram._bot DEBUG ()
+20:48:43,214 telegram._bot DEBUG Exiting: get_updates
+20:48:43,214 telegram._bot DEBUG Entering: get_updates
+20:48:53,254 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:48:53,255 telegram._bot DEBUG No new updates found.
+20:48:53,255 telegram._bot DEBUG ()
+20:48:53,255 telegram._bot DEBUG Exiting: get_updates
+20:48:53,255 telegram._bot DEBUG Entering: get_updates
+20:49:03,356 httpx._client DEBUG HTTP Request: POST https://api.telegram.org/bot5835657366:AAFH_1ZORPzU9DCf0DOLInTTHKskSOQZAX4/getUpdates "HTTP/1.1 200 OK"
+20:49:03,357 telegram._bot DEBUG No new updates found.
+20:49:03,357 telegram._bot DEBUG ()
+20:49:03,357 telegram._bot DEBUG Exiting: get_updates
+20:49:03,357 telegram._bot DEBUG Entering: get_updates

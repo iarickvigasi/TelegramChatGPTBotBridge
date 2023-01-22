@@ -40,8 +40,9 @@ async def help(update, context):
 async def echo(update, context):
     """Echo the user message."""
     prompt = update.message.text
-    prediction = await predict_default(prompt)["choices"][0]["text"]
-    await context.bot.send_message(chat_id=update.effective_chat.id, text=prediction)
+    prediction = await predict_default(prompt)
+    first_prediction = prediction["choices"][0]["text"]
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=first_prediction)
 
 
 async def error(update, context):
@@ -62,6 +63,7 @@ def main():
     # log all errors
     application.add_error_handler(error)
 
+    # application.run_polling()
     # Start the Bot
     application.run_webhook(
         listen="0.0.0.0",
