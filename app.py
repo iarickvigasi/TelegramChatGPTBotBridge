@@ -50,7 +50,7 @@ if __name__ == '__main__':
     application = ApplicationBuilder().token(telegram_api_token).build()
 
     start_handler = CommandHandler('start', start)
-    echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)
+    echo_handler = MessageHandler(filters.TEXT, echo)
 
     application.add_handler(start_handler)
     application.add_handler(echo_handler)

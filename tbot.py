@@ -25,24 +25,29 @@ logging.basicConfig(filename=logname,
 
 logger = logging.getLogger(__name__)
 
+
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
 
+
 async def help(update, context):
     """Send a message when the command /help is issued."""
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Oh I need help also!")
 
+
 async def echo(update, context):
     """Echo the user message."""
     prompt = update.message.text
-    prediction = await predict_default(prompt)
-    await context.bot.send_message(chat_id=update.effective_chat.id, text=prediction["choices"][0]["text"])
+    prediction = await predict_default(prompt)["choices"][0]["text"]
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=prediction)
+
 
 async def error(update, context):
     """Log Errors caused by Updates."""
     logger.warning('Update "%s" caused error "%s"', update, context.error)
+
 
 def main():
     """Start the bot."""
