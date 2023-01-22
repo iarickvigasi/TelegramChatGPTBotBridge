@@ -30,15 +30,15 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def help(update, context):
     """Send a message when the command /help is issued."""
-    update.message.reply_text('Help!')
+    await context.bot.send_message(chat_id=update.effective_chat.id, text="Oh I need help also!")
 
 def echo(update, context):
     """Echo the user message."""
-    update.message.reply_text(update.message.text)
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
 
 def error(update, context):
     """Log Errors caused by Updates."""
-    logger.warning('Update "%s" caused error "%s"', update, context.error)
+    logger.error('Update "%s" caused error "%s"', update, context.error)
 
 def main():
     """Start the bot."""
@@ -57,6 +57,8 @@ def main():
         listen="0.0.0.0",
         port=PORT,
         secret_token='ASecretTokenIHaveChangedByNow',
+        key='private.key',
+        cert='cert.pem',
         webhook_url="https://chat-gpt-telegeram-bridge.herokuapp.com/"
     )
 
