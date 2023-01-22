@@ -5,8 +5,10 @@ Source: https://github.com/python-telegram-bot/python-telegram-bot/blob/master/e
 """
 import os
 import logging
+
+import telegram
 from telegram import Update
-from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
+from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler
 
 PORT = int(os.environ.get('PORT', 5000))
 TELEGRAM_API_TOKEN = os.environ['TELEGRAM_API_TOKEN']
@@ -45,14 +47,15 @@ def main():
     # on different commands - answer in Telegram
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help))
+    application.add_handler(MessageHandler(telegram.ext.filters.TEXT, echo))
 
     # log all errors
     application.add_error_handler(error)
 
-    # Start the Bot
-    application.start_webhook(listen="0.0.0.0",
+    application.updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
                           url_path=TELEGRAM_API_TOKEN)
+
     application.bot.setWebhook('https://chat-gpt-telegeram-bridge.herokuapp.com/' + TELEGRAM_API_TOKEN)
 
 if __name__ == '__main__':
