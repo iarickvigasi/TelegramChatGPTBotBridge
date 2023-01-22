@@ -58,8 +58,8 @@ def main():
         listen="0.0.0.0",
         port=PORT,
         secret_token='ASecretTokenIHaveChangedByNow',
-        key='private.key',
-        cert='cert.pem',
+        # key='private.key',
+        # cert='cert.pem',
         webhook_url="https://chat-gpt-telegeram-bridge.herokuapp.com/"
     )
 
