@@ -38,7 +38,7 @@ async def echo(update, context):
 
 async def error(update, context):
     """Log Errors caused by Updates."""
-    logger.error('Update "%s" caused error "%s"', update, context.error)
+    logger.warning('Update "%s" caused error "%s"', update, context.error)
 
 def main():
     """Start the bot."""
@@ -47,6 +47,7 @@ def main():
     # on different commands - answer in Telegram
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help))
+
     application.add_handler(MessageHandler(telegram.ext.filters.TEXT, echo))
 
     # log all errors
