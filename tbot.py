@@ -10,6 +10,8 @@ import telegram
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler
 
+from openai_bridge import predict_default
+
 PORT = int(os.environ.get('PORT', 5000))
 TELEGRAM_API_TOKEN = os.environ['TELEGRAM_API_TOKEN']
 
@@ -34,7 +36,9 @@ async def help(update, context):
 
 async def echo(update, context):
     """Echo the user message."""
-    await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
+    prompt = update.message.text
+    prediction = predict_default(prompt)
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=prediction["choices"][0]["text"])
 
 async def error(update, context):
     """Log Errors caused by Updates."""
