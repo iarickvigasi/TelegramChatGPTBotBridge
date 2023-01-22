@@ -28,15 +28,15 @@ logger = logging.getLogger(__name__)
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
 
-def help(update, context):
+async def help(update, context):
     """Send a message when the command /help is issued."""
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Oh I need help also!")
 
-def echo(update, context):
+async def echo(update, context):
     """Echo the user message."""
     await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
 
-def error(update, context):
+async def error(update, context):
     """Log Errors caused by Updates."""
     logger.error('Update "%s" caused error "%s"', update, context.error)
 
