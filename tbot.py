@@ -52,11 +52,14 @@ def main():
     # log all errors
     application.add_error_handler(error)
 
-    application.updater.start_webhook(listen="0.0.0.0",
-                          port=int(PORT),
-                          url_path=TELEGRAM_API_TOKEN)
+    # Start the Bot
+    application.run_polling()
 
-    application.bot.setWebhook('https://chat-gpt-telegeram-bridge.herokuapp.com/' + TELEGRAM_API_TOKEN)
+    # webhook broken setup
+    # application.updater.start_webhook(listen="0.0.0.0",
+    #                       port=int(PORT),
+    #                       url_path=TELEGRAM_API_TOKEN)
+    # application.bot.setWebhook('https://chat-gpt-telegeram-bridge.herokuapp.com/' + TELEGRAM_API_TOKEN)
 
 if __name__ == '__main__':
     main()
