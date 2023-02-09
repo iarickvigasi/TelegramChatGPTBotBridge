@@ -78,18 +78,18 @@ async def conversation_mode(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_message = update.message.text
 
     conversation = get_or_create_conversation_doc(user_message, user_id)
-    conversation_summary = await get_conversation_summary(conversation)
-
-    print(conversation_summary)
+    # conversation_summary = await get_conversation_summary(conversation)
+    # print(conversation_summary)
+    messages = convert_messages_to_text(conversation.get("messages"))
 
     add_user_message_to_conversation(user_message, user_id)
 
     print("User {} ({}) sent: {}".format(user_name, user_id, user_message))
 
-    full_prompt = conversation_mode_prompt + "\n" + "Full conversation summary in short: " + conversation_summary + \
+    full_prompt = conversation_mode_prompt + "\n" + "Full conversation: " + messages + \
                   "\n[" + user_name + "]: " + user_message + ". \n" + "[bot]: "
 
-    response = await predict_default(full_prompt, temperature=0.8, max_tokens=2000)
+    response = await predict_default(full_prompt, temperature=0.8, max_tokens=512)
 
     selected_response = response["choices"][0]["text"]
 
