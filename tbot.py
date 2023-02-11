@@ -16,12 +16,14 @@ from log_utils import log_user
 from logger import logger
 from openai_bridge import predict_default, conversation_mode_prompt
 
+from ChatGPT import Chatbot
+
 PORT = int(os.environ.get('PORT', 5000))
 TELEGRAM_API_TOKEN = os.environ['TELEGRAM_API_TOKEN']
 
 model_id = "text-davinci-003"
 
-
+chatbot = Chatbot(api_key=os.getenv("OPENAI_API_KEY"), engine=model_id)
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -54,47 +56,15 @@ def convert_messages_to_text(messages):
     return text
 
 
-async def get_conversation_summary(conversation):
-    messages = conversation.get("messages")
-    print(messages)
-    text = convert_messages_to_text(messages)
-
-    prompt = "This is a full conversation with an AI. AI is bot, and user is user. Read the following text, " \
-             "and get the most important summary of the conversation to continue the dialogue. Max is 1000 words." \
-             "Conversation: " + text + "\n" + "Summary: "
-
-    summary = await predict_default(prompt, temperature=0.5, max_tokens=2000)
-
-    summary = summary["choices"][0]["text"]
-    print(summary)
-    return summary
-
-
 async def conversation_mode(update: Update, context: ContextTypes.DEFAULT_TYPE):
     log_user(update)
-
     user_id = update.message.from_user.id
     user_name = update.message.from_user.first_name
     user_message = update.message.text
+    print("Conversation started: {}".format(user_message))
 
-    conversation = get_or_create_conversation_doc(user_message, user_id)
-    # conversation_summary = await get_conversation_summary(conversation)
-    # print(conversation_summary)
-    messages = convert_messages_to_text(conversation.get("messages"))
-
-    add_user_message_to_conversation(user_message, user_id)
-
-    print("User {} ({}) sent: {}".format(user_name, user_id, user_message))
-
-    full_prompt = conversation_mode_prompt + "\n" + "Full conversation: " + messages + \
-                  "\n[" + user_name + "]: " + user_message + ". \n" + "[bot]: "
-
-    response = await predict_default(full_prompt, temperature=0.8, max_tokens=512)
-
-    selected_response = response["choices"][0]["text"]
-
-    add_bot_message_to_conversation(selected_response, user_id)
-
+    response = chatbot.ask(user_message)
+    print("Bot responded: {}".format(response))
     logging.info("Bot responded: {}".format(response["choices"][0]["text"]))
     logging.info("Response: {}".format(response))
 
